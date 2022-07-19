@@ -1,1 +1,907 @@
+<!DOCTYPE html>
+<!-- Created By Kelvin T. Saungweme -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Collaborations</a></li>
+		<li><a href="research.html" class="menu-btn">Research Articles</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+        <!--TOP NAVBAR AND SUBMENU SECTION-->
+	<!-- home section start -->
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+.popup .content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-150%) scale(0);
+ width: 500px;
+ font-weight: bold;
+ height: 600px;
+ z-index: 2;
+ text-align: center;
+ padding: 20px;
+ border-radius: 20px;
+ background: #292929;
+ z-index: 1;
+ font-family: 'Nunito', sans-serif;
+}
 
+.popup .content.close-btn {
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ width: 30px;
+ height: 30px;
+ color: #FFF;
+ font-size: 30px;
+ border-radius: 50%;
+ padding: 2px 5px 7px 5px;
+ background: #292929;
+ }
+
+.popup.active .content {
+transition: all 300ms ease-in-out;
+transform: translate(-50%,-50%) scale(1);
+}
+
+h1 {
+ text-align: center;
+ font-size: 32px;
+ font-weight: 600;
+ padding-top: 20px;
+ padding-bottom: 10px;
+ font-family: 'Nunito', sans-serif;
+}
+
+a {
+ font-weight: 600;
+ color: white;
+}
+
+.input-field .validate {
+padding: 20px;
+font-size: 16px;
+border-radius: 10px;
+border: none;
+margin-bottom: 15px;
+color: #bfc0c0;
+background: #262626;
+outline: none;
+}
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}	
+.button-1{
+  color: crimson;
+  border: 3px solid crimson;
+  background-image: linear-gradient(to right, transparent 50%, crimson 50%);
+  background-size: 200%;
+  background-position: 0%;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.button-1:hover{
+color: #FFF;
+background-position: 100%;
+}
+.first-button {
+color: white;
+font-size: 18px;
+font-weight: 500;
+padding: 30px 50px;
+border-radius: 40px;
+border: none;
+position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%);
+background: #262626;
+
+outline: none;
+}
+
+.first-button:active {  
+background: linear-gradient(145deg, #222222, #292929);
+
+border: none;
+}
+
+.second-button {
+color: white;
+font-size: 18px;
+font-weight: 500;
+margin-top: 20px;
+padding: 20px 30px;
+border-radius: 40px;
+border: none;
+background: #262626;
+
+outline: none;
+}
+
+.second-button:active{
+background: linear-gradient(145deg,#222222, #292929);
+border: none;
+outline: none;
+}
+p{
+color: #bfc0c0;
+padding: 20px;
+ font-family: 'Nunito', sans-serif;
+}
+
+</style>
+<section class="home" id="home">		
+<div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Kelvin Saungweme</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+		<button onclick="togglePopup()" class="button button-1"><span></span> Hire Me </button>
+            </div>
+        </div>
+ <div class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()">
+     </div> 
+ <form method="post" autocomplete="off" name="google-sheet">
+<h1>Hire Me</h1> 
+  <div class="input-field"><input type="text" name= "fullname" placeholder="Full Name" class="validate" required></div>
+  <div class="input-field"><input type="text" name= "companyname" placeholder="Company-Name" class="validate"></div>
+  <div class="input-field"><input type="text" name= "email" placeholder="Email" class="validate" required></div>
+  <div class="input-field"><input type="text" name= "phonenumber" placeholder="Phone-Number" class="validate" required></div>   
+  <div>
+  <input type="submit" class="btn-hire" name="submit" value="Submit">
+  </div>
+  <p>Hire me for a personal or company project!</a></p> 
+  </form>
+  </div>
+  </div>
+    </section>
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/me1.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Kelvin and I'm a <span class="typing-2"></span></div>
+                    <p>In addition to the above l am a student, author, entrepreneur, social maverick as well as an academic achiever .My passion is an assemblage of both computer science and mathematics to forge my non ephemeral cupidity in the field of Deep Machine Learning and Artificial Intelligence. I have many accomplishments locally and internationally in my name surreptitious due to hard work, obsession and a keen desire to outdo my previous self. Prior to my co pending laconic subject matter ,l have approached patenting avenues for a device in my name with the field of invention being alternative energy ,to serve the local and global community at large so as to ease fuel shortage. With mentorship and resources I hope to expand my knowledge to hence prolific inventions to help people above my own personal benefit.</p>
+		   <a href="pdfs/KELVIN SAUNGWEME.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section>
+		<style>
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  -o-object-fit:contain;
+   object-fit: contain;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+ <!-- about section start -->
+ <h2 class="title">Gallery</h2>
+<body translate="no" >
+  <div class="container">
+  <div class="box">
+    <img src="images/book1.JPG">
+    <span>The Zimbabwean Dream Book</span>
+  </div>
+  <div class="box">
+    <img src="images/lab.jpg">
+    <span>Research on Rabbies treatment</span>
+  </div>
+  <div class="box">
+    <img src="images/lead.jpg">
+    <span>Africa Science Buskers Festival </span>
+  </div>
+  <div class="box">
+    <img src="images/sciencestuff.jpg">
+    <span>Imbewu Science Foundation</span>
+  </div>
+   <div class="box">
+    <img src="images/sa.jpg">
+    <span>Virtual Reality</span>
+  </div>
+      <div class="box">
+    <img src="images/josuaolivier.jpg">
+    <span>Awards Ceremony</span>
+  </div>
+</div>
+</section>
+<section>
+		<style>
+.container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+ <!-- about section start -->
+<body translate="no" >
+  <div class="container">
+  <div class="box">
+    <img src="images/parul1.png">
+    <span>Poetry Recitation</span>
+  </div>
+  <div class="box">
+    <img src="images/richard.jpg">
+    <span>Its about Vision</span>
+  </div>
+  <div class="box">
+    <img src="images/buddies.JPG">
+    <span>Fundraising Dinner </span>
+  </div>
+  <div class="box">
+    <img src="images/IMG_0422~2.JPG">
+    <span>Favourable Encounter</span>
+  </div>
+   <div class="box">
+    <img src="images/IMG-20211002-WA0006.jpg">
+    <span>Manhinga Children's Home Family</span>
+  </div>
+      <div class="box">
+    <img src="images/DSC_3206 (1).jpg">
+    <span>Early Fuel Discoveries</span>
+  </div>
+</div>
+</section>
+
+ <!-- Video Section -->	
+<section>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.containerz{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding:0 10%;
+  background:linear-gradient(90deg, #fff 60%, #eee 40.1%);
+  font-family: 'Nunito', sans-serif;
+}
+
+.containerz .side-bar{
+  width:400px;
+}
+
+.containerz .side-bar.active{
+  display: none;
+}
+
+.containerz .side-bar .list{
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.containerz .side-bar .list li{
+  padding:10px 0;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+}
+
+.containerz .side-bar .list li::before{
+  content: '';
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  left:-5px;
+  width: 0%;
+  height: 3px;
+  background-color: #000;
+  transition: width .2s linear .2s;
+}
+
+.containerz .side-bar .list li.active,
+.container .side-bar .list li:hover{
+  font-size: 30px;
+}
+
+.containerz .side-bar .list li.active::before,
+.container .side-bar .list li:hover::before{
+  right: -5px;
+  width: 105%;
+}
+
+.containerz .video-container{
+  flex:1;
+}
+
+.containerz .video-container video{
+  width: 100%;
+  object-fit: cover;
+}
+
+#menu-btn{
+  left:20px;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width:1200px){
+  .container{
+    position: relative;
+  }
+
+  .containerz .side-bar{
+    position: absolute;
+    top:0; left:-110%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    padding:30px;
+  }
+
+  .containerz .side-bar .list{
+    height: 100%;
+    justify-content: center;
+  }
+
+  .containerz .side-bar.active{
+    box-shadow: 0 0 0 100vw rgba(0,0,0,.8);
+    display: initial;
+    left:0;
+  }
+}
+
+@media (max-width:450px){
+
+  .containerz{
+    padding:20px;
+  }
+
+  .container .side-bar{
+    width: 300px;
+  }
+
+  .containerz .side-bar .list li{
+    font-size: 15px;
+  }
+
+  .containerz .side-bar .list li.active{
+    font-size: 20px;
+  }
+
+}
+</style>
+
+
+<div class="containerz">
+<div id="menu-btn" class="fas fa-bars"></div>
+    <div class="side-bar">
+
+        <ul class="list">
+            <li class="active" data-src="landingpagevids/Project 1.mp4">Poetry Recitation</li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+            <li data-src="#"></li>
+        </ul>
+
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" loop muted autoplay controls></video>
+    </div>
+
+</div>
+
+<script>
+
+let sideBar = document.querySelector('.containerz .side-bar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    sideBar.classList.toggle('active');
+};
+
+let video = document.querySelector('.containerz .video-container video');
+let videoLinks = document.querySelectorAll('.containerz .side-bar .list li');
+
+videoLinks.forEach(link =>{
+    link.onclick = () =>{
+        let src = link.getAttribute('data-src');
+        video.src = src;
+        sideBar.classList.remove('active');
+        videoLinks.forEach(remove =>{remove.classList.remove('active')});
+        link.classList.add('active');
+    }
+})
+
+</script>
+</section>
+	
+<!-- Banner Section -->	
+	
+<section>
+<style>
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner{
+    background:linear-gradient(-55deg, #ff7675 29%,#d63031 29.1%, #d63031 68%, #007500 68.1%);
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
+    overflow: hidden;
+}
+
+.banner-container .banner .shoe{
+    flex:1 1 250px;
+    padding:15px;
+    text-align: center;
+}
+
+.banner-container .banner .shoe img{
+    width:80%;
+}
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
+}
+
+.banner-container .banner .content span{
+    color:#eee;
+    font-size: 25px;
+}
+
+.banner-container .banner .content h3{
+    color:#fff;
+    font-size: 40px;
+}
+
+.banner-container .banner .content p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
+}
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#d63031;
+    margin:5px auto;
+    text-decoration: none;
+}
+
+.banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
+}
+
+.banner-container .banner .women img{
+    width:100%;
+}
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
+}
+</style>
+<div class="banner-container">
+
+    <div class="banner">
+        <div class="shoe">
+            <img src="images/81HzZxSVVrL.jpg" alt="">
+        </div>
+        <div class="content">
+            <span>upto</span>
+            <h3>10% 0ff</h3>
+            <p>offer ending soon!</p> 
+            <a href="https://www.amazon.in/Understanding-Python-Programming-Language-made/dp/168494760X/ref=sr_1_2?qid=1656352131&refinements=p_27%3AKelvin+T.+Saungweme&s=books&sr=1-2" target="_blank" rel="noopener noreferrer"class="btn">veiw offer</a>
+        </div>
+        <div class="women">
+            <img src="images/women.png" alt="">
+        </div>
+    </div>
+
+</div>
+</section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">My services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Web Design</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Software Development</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Graphics Design</div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>Computer Sience and Engineering(C.S.E) not only being my Major but rather a passion, l am well equipped to deliver the best work.Tailor-made to your satisfication.</p>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+		
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">My Collaborations</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/YSEA-Logo-2-Transparent.png" alt="">
+                        <div class="text">YASEA</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/sciteens_logo_initials.png" alt="">
+                        <div class="text">Sciteens</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/hello.png" alt="">
+                        <div class="text">Africa Science Buskers</div>
+                    </div>
+                </div>
+		     <div class="card">
+                    <div class="box">
+                        <img src="images/cropped-Asset-1-800.png" alt="">
+                        <div class="text">Imbewu Foundation</div>
+                    </div>
+                </div>
+		    <div class="card">
+                    <div class="box">
+                        <img src="images/yess.jpg" alt="">
+                        <div class="text">SAYESS</div>
+                    </div>
+                </div>
+		    <div class="card">
+                    <div class="box">
+                        <img src="images/download.png" alt="">
+			    <div class="text">GBYSTB</div>
+                    </div>
+                </div>
+		 <div class="card">
+                    <div class="box">
+                        <img src="images/Feminine Beauty and Spa Logo with Woman's Face.png" alt="">
+			    <div class="text">Charity Foundation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Don't hesitate to get in touch ,so that we can work together and bridge ideas into reality.</p>
+			<div class="details">
+			     <i class="fa fa-phone"><span></span> &nbsp; +91 83470 60435</i>
+                            <i class="fa fa-envelope"><span></span> &nbsp; kevysaungweme960@gmail.com</i>
+                         </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form method="post" autocomplete="off" name="google-sheet">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="Name"placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="Email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name= "Subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name= "Message" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <input type="submit" class="btn-contact"name="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- footer section -->
+<!--WHATSAPP DIRECT CHAT-->
+<a href="https://wa.me/918347060435" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+<!------>
+    <footer>
+        <span>Created By <a href="https://www.kelvinsaungweme.com">kelvinsaungweme</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+<script src="script.js"></script>
+<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwtJvFkMj2UNA8amPeTSdcFubyyIhmJe-_exnHSDGr03xHxHXY48mJAOYHp_KEzPInU/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Message successfully send!."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+		<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbx8ndKoXKDZ5f1_36DqBV1BAZsTaOr9prp_SaIIOidgATjE7zptfrdx5rjNEmhzxCE--Q/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("You have successfully subscribed."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+	<script type="text/javascript">
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwWeRPju0QB8S0MKm1DaVBHodZt9RglvuS5dxaflqxtufZxH8jUjrLE87wg9VuCmq7CHg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Hiring process finished!.We will get back to you!."))
+                .catch(error => console.error('Error!', error.message))
+            })
+  </script>
+<script>
+      function togglePopup() {
+        document.getElementById("popup-1")
+      .classList.toggle("active");
+}
+</script>
+</body>
+</html>
