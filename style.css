@@ -242,7 +242,7 @@ section .title::after{
 .about .about-content .left img{
     height: 798px;
     width: 517.02px;
-    object-fit: cover;
+    object-fit: contain;
     object-position: top;
    border-radius: 9000px;
 }
