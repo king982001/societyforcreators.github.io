@@ -180,6 +180,28 @@ section .title::after{
   height: 100vh;
   position: relative;
 }
+.homescreen{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.homescreen h1{
+    font-size: 70px;
+    margin-top:80px;
+}
+.homescreen p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.homelogo{
+    width: 400px;
+    height:400px;
+    cursor: pointer;
+}
 .video {
   object-fit: cover;
   position: absolute;
